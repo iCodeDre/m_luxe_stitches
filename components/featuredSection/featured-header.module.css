@@ -1,0 +1,58 @@
+.featuredHeader {
+  margin: 6.5rem 0 2rem 0;
+  & h1 {
+    color: rgb(48, 46, 46);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  & nav {
+    justify-self: center;
+  }
+  & a {
+    color: rgb(48, 46, 46);
+  }
+
+  & button {
+    background: none;
+    color: rgb(48, 46, 46);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 0;
+  }
+
+  & .activeTabIndicator {
+    background: #eb07a2;
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  }
+
+  & .active {
+    color: #eb07a2;
+  }
+}
+
+.featuredHeader ul {
+  color: rgb(48, 46, 46);
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .featuredHeader {
+    & h1 {
+      font-size: 1.2rem;
+    }
+    & button {
+      font-size: 0.9rem;
+
+      padding: 0.5rem 0;
+    }
+  }
+}

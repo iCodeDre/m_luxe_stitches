@@ -1,0 +1,19 @@
+.NoProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  & p {
+    color: rgb(91, 91, 91);
+    font-size: 0.9rem;
+  }
+
+  & > button {
+    color: #fff;
+    border: none;
+    background: #7005dc;
+    padding: 0.4rem;
+  }
+}

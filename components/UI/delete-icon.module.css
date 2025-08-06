@@ -1,0 +1,14 @@
+.deleteIconContainer {
+  border: none;
+  background: transparent;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10%;
+  right: 4%;
+
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+}

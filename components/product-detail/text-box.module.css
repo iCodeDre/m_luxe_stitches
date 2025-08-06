@@ -1,0 +1,101 @@
+.textBox {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(8px, 1vw + 5px, 16px);
+  gap: 1.5em;
+  width: 50%;
+
+  & header {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.4em;
+    font-weight: 600;
+  }
+
+  & button {
+    font-size: 1em;
+    height: 2.8125em;
+  }
+
+  & .editInCart {
+    &:hover {
+      color: #eb07a2;
+    }
+  }
+
+  & .actionButtons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+
+    & h1 {
+      font-size: 1.4em;
+    }
+
+    & p {
+      color: rgb(48, 46, 46);
+      font-weight: 500;
+    }
+
+    & .avgRating {
+      font-size: 0.9em;
+    }
+  }
+
+  & .cta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .wishListButton {
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: 30%;
+
+    & svg {
+      width: 3.125em;
+    }
+  }
+}
+
+@media (max-width: 931px) {
+  .textBox {
+    gap: 1em;
+
+    & .cta {
+      gap: 0.5em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .textBox {
+    font-size: 16px;
+    width: 100%;
+
+    & button {
+      width: 40%;
+    }
+
+    & .actionButtons {
+      gap: 1rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .textBox {
+    font-size: 14px;
+
+    & .wishListButtonContainer {
+      width: 35%;
+    }
+  }
+}

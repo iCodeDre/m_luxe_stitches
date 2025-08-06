@@ -1,0 +1,66 @@
+.reviewFormContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(13px, 1vw + 8px, 16px);
+  gap: 2em;
+  width: 50%;
+
+  & .reviewFormHeader {
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    gap: 0.5em;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & label {
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    & > button {
+      background: #eb07a2;
+      border: none;
+      color: #fff;
+      font-size: 1em;
+      height: 50px;
+      width: 110px;
+    }
+
+    & .ratingContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+
+  & .writeReviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & textarea {
+      border: 1px solid rgb(216, 216, 216);
+      box-sizing: border-box;
+      color: rgb(82, 82, 82);
+      font-size: 1em;
+      height: 180px;
+      padding: 1em;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .reviewFormContainer {
+    width: 100%;
+  }
+}

@@ -1,0 +1,42 @@
+.quanityButtonsContainer {
+  display: flex;
+  height: 35px;
+  width: 100px;
+  & p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0 10px;
+    border-top: 1px solid rgb(216, 216, 216);
+    border-bottom: 1px solid rgb(216, 216, 216);
+  }
+  & .button {
+    background: transparent;
+    border: 1px solid rgb(216, 216, 216);
+    flex: 1;
+    width: 35px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .quanityButtonsContainer {
+    width: 85px;
+  }
+}
+@media (max-width: 499px) {
+  .quanityButtonsContainer {
+  
+
+    & .button {
+      & img {
+        width: 18px;
+      }
+    }
+
+    & p {
+      font-size: 0.8rem;
+    }
+  }
+}

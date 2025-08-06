@@ -1,0 +1,87 @@
+.cartTable {
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+  width: 60%;
+
+  & th:first-child {
+    text-align: center;
+  }
+
+  & th,
+  td {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+  }
+
+  & th {
+    text-align: left;
+    height: 50px;
+  }
+
+  & td {
+    height: 110px;
+
+    & a {
+      display: flex;
+      aspect-ratio: 9 / 10;
+      align-items: center;
+      width: 80px;
+    }
+  }
+
+  & h1 {
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
+    font-weight: 600;
+  }
+
+  & .tableImageContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 1rem;
+  }
+}
+.deleteIconContainer {
+  border: none;
+  background: transparent;
+  position: relative;
+  width: 30px;
+  height: 20px;
+
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1225px) {
+  .cartTable {
+    aspect-ratio: 9/12;
+    width: 665px;
+
+    & td {
+      & a {
+        aspect-ratio: 9 / 10;
+        width: 70px;
+      }
+    }
+    & .tableImageContainer {
+      padding-left: 0;
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .cartTable {
+    aspect-ratio: unset;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartTable {
+    display: none;
+  }
+}

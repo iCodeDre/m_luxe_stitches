@@ -1,0 +1,33 @@
+.ratingContainer {
+  display: flex;
+
+  & label {
+    cursor: pointer;
+  }
+
+  & input {
+    display: none;
+  }
+  & .ratingSvg {
+    width: 20px;
+
+    & .fillActive {
+      fill: #ff9900;
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .ratingContainer {
+    & .ratingSvg {
+      width: 18px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .ratingContainer {
+    & .ratingSvg {
+      width: 15px;
+    }
+  }
+}

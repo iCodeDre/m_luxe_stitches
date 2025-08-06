@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+.cardContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  aspect-ratio: 16/8;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 1rem;
+  width: 68.66%;
+  height: 100%;
+}
+
+.cardImageContainer {
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16/8;
+}
+
+.cardImage {
+  object-fit: cover;
+  transition: transform 0.3s ease-in;
+}
+
+.cardTextContainer {
+  width: 29.3%;
+}
+
+.cardTextContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+
+  & h2 {
+    color: rgb(48, 46, 46);
+    font-size: 2rem;
+  }
+
+  & hr {
+    border: none;
+    background: linear-gradient(to right, #7005dc, #eb07a2);
+    width: 60%;
+    height: 1px;
+  }
+
+  & p {
+    font-family: "Italianno", cursive;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+}
+
+.cardDescriptionOverlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(1px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 500ms ease-in-out;
+
+  & .cardDescriptionContainer {
+    color: #c0bebe;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+
+    & h3 {
+      font-size: 1rem;
+    }
+
+    & p {
+      font-size: 0.8rem;
+      text-align: justify;
+      line-height: 1.3rem;
+    }
+
+    & button {
+      color: #c0bebe;
+      background: transparent;
+      border: 1px solid #c0bebe;
+      padding: 0.5rem 0.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.cardImageContainer:hover .cardDescriptionOverlay {
+  opacity: 1;
+}
+
+.cardImageContainer:hover .cardImage {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1270px) {
+  .cardTextContainer div {
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 958px) {
+  .cardTextContainer div {
+    & h2 {
+      font-size: 1.2rem;
+    }
+    & p {
+      font-size: 1.7rem;
+    }
+  }
+  .cardDescriptionOverlay {
+    & .cardDescriptionContainer {
+      top: 50%;
+
+      & h3 {
+        font-size: 0.9rem;
+      }
+
+      & p {
+        font-size: 0.8rem;
+      }
+
+      & button {
+        padding: 0.4rem 0.5rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    gap: 3rem;
+    width: 95%;
+    aspect-ratio: 16/ 12;
+    margin: 6.5rem auto 0 auto;
+  }
+  .cardTextContainer {
+    margin: auto;
+    width: 100%;
+    & > div {
+      & h2 {
+        font-size: 1.2rem;
+      }
+      & p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .cardWrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .cardDescriptionOverlay {
+    & .cardDescriptionContainer {
+      & h3 {
+        font-size: 0.8rem;
+      }
+
+      & p {
+        font-size: 0.7rem;
+      }
+
+      & button {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .cardDescriptionOverlay {
+    & .cardDescriptionContainer {
+      top: 40%;
+
+      & h3 {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+
+      & p {
+        font-size: 0.6rem;
+        line-height: unset;
+        text-align: center;
+      }
+
+      & button {
+        display: flex;
+        padding: 0.2rem 0.3rem;
+        font-size: 0.6rem;
+        justify-self: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.productHeader {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+
+@media (max-width: 1225px) {
+  .productHeader {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .productHeader {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+

@@ -1,0 +1,26 @@
+.headerSection {
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 100vw;
+
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  & button {
+    font-size: .8rem;
+    padding: 0 2.5rem;
+  }
+
+  & img {
+    height: 35px;
+    width: 35px;
+  }
+}

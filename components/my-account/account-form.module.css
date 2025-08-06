@@ -1,0 +1,83 @@
+  & .accountForm {
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+
+    & .heading {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    & .subheading {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    & .row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    & .field {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    & label {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    & input {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    & input:focus {
+      border-color: #eb07a2;
+      outline: none;
+    }
+
+    & .note {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 0.3rem;
+    }
+
+    & .passwordSection {
+      border: none;
+      margin-top: 2rem;
+    }
+
+    & .passwordSection legend {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    & .saveButton {
+      background-color: #eb07a2;
+      color: white;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 150px;
+      transition: background-color 0.2s ease;
+    }
+
+    & .saveButton:hover {
+     opacity: .8;
+    }
+  }

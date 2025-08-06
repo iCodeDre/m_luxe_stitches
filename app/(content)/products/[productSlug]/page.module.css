@@ -1,0 +1,24 @@
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2.5rem auto;
+  width: 1181.65px;
+  /* max-width: 1200px; */
+}
+
+@media (max-width: 1225px) {
+  .pageContent {
+    width: 98%;
+  }
+}
+@media (max-width: 767px) {
+  .pageContent {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .pageContent {
+  margin: 1rem auto;
+  }
+}

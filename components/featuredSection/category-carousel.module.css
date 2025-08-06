@@ -1,0 +1,50 @@
+.categoriesCarousel {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  height: 355px;
+  cursor: grab;
+}
+
+.categoriesCarousel > div {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+
+  & > div {
+    height: 300px;
+    width: 16.67%;
+  }
+}
+
+@media (max-width: 1270px) {
+  .categoriesCarousel > div {
+    & > div {
+      width: 19.9%;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .categoriesCarousel > div {
+    & > div {
+      width: 24.9%;
+    }
+  }
+}
+
+@media (max-width: 868px) {
+  .categoriesCarousel > div {
+    & > div {
+      width: 33.3%;
+    }
+  }
+}
+@media (max-width: 625px) {
+  .categoriesCarousel > div {
+    & > div {
+      width: 50%;
+    }
+  }
+}
+

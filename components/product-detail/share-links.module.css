@@ -1,0 +1,13 @@
+.shareLinksContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  & img {
+    width: 0.938em;
+  }
+
+  & .facebookImage {
+    width: 10px;
+  }
+}

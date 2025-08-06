@@ -1,0 +1,11 @@
+.orderDetailSection {
+  flex: 1;
+
+  & .orderContentsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    gap: 1rem;
+  }
+}

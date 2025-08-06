@@ -1,0 +1,130 @@
+.cardImageContainer {
+  border-radius: 5px;
+  width: 33.33%;
+  height: 100%;
+
+  & span {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.homeGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 1190px;
+  margin: auto;
+
+  & .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  & .image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-bottom: 1px solid #eee;
+  }
+
+  & .info {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .category {
+    height: 14px;
+    border-radius: 4px;
+  }
+
+  & .name {
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  & .rating {
+    height: 14px;
+    border-radius: 4px;
+  }
+
+  & .price {
+    height: 16px;
+    border-radius: 4px;
+  }
+}
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 74.8%;
+
+  & .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  & .image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-bottom: 1px solid #eee;
+  }
+
+  & .info {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  & .category {
+    height: 14px;
+    border-radius: 4px;
+  }
+
+  & .name {
+    height: 18px;
+    border-radius: 4px;
+  }
+
+  & .rating {
+    height: 14px;
+    border-radius: 4px;
+  }
+
+  & .price {
+    height: 16px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .homeGrid {
+    box-sizing: border-box;
+    padding: 0 2rem;
+    width: 100%;
+  }
+}
+@media (max-width: 1025px) {
+  .productGrid,
+  .homeGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 778px) {
+  .productGrid,
+  .homeGrid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

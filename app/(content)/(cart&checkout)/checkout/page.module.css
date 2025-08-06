@@ -1,0 +1,19 @@
+.checkoutSection {
+  width: 100%;
+
+  & .checkoutContentsContainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1190px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .checkoutSection {
+    & .checkoutContentsContainer {
+      gap: 2rem;
+      width: 95%;
+    }
+  }
+}

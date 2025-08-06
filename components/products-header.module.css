@@ -1,0 +1,27 @@
+.productsHeader {
+  background: rgb(246, 245, 245);
+  height: clamp(150px, 27vw + 30px, 200px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  & h1 {
+    color: rgb(48, 46, 46);
+    font-size: clamp(1.5rem, 1vw + 1rem, 3rem);
+    font-weight: 600;
+  }
+
+  & p {
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
+  }
+
+  & .cartLinks {
+    display: flex;
+    gap: 1rem;
+    font-size: clamp(0.9rem, 1vw + 0.6rem, 1.5rem);
+    font-weight: 600;
+  }
+}

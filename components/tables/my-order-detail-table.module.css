@@ -1,0 +1,95 @@
+.orderDetailTable {
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+  width: 100%;
+
+  & th:first-child {
+    text-align: center;
+  }
+
+  & th,
+  td {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+  }
+
+  & th {
+    text-align: left;
+    height: 50px;
+  }
+
+  & td {
+    height: 110px;
+
+    & a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      padding-left: 1rem;
+    }
+  }
+
+  & h1 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  & .tableImageContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    & a {
+      width: 80px;
+      height: 90px;
+    }
+  }
+  & .deleteIconContainer {
+    border: none;
+    background: transparent;
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    & > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.adminActionButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+
+  & button {
+    background: none;
+    border: none;
+    font-weight: 500;
+
+  }
+
+  & form:first-child {
+    & > button {
+      color: #4caf50;
+    }
+  }
+  & form:last-child {
+    & > button {
+      color: #f44336;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .orderDetailTable {
+    display: none;
+  }
+
+  .adminActionButtonContainer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

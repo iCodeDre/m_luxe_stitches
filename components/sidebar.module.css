@@ -1,0 +1,53 @@
+.sidebar {
+  background: white;
+  display: flex;
+  font-size: 0.9rem;
+  width: 23.7%;
+
+  & .sidebarInner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  & .sidebarInner,
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  & h1 {
+    color: rgb(45, 45, 45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  & a {
+    color: rgb(45, 45, 45);
+  }
+
+  & .showAmount {
+    color: #eb07a2;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 930px) {
+  .sidebar {
+    width: 208px;
+
+    & h1 {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 778px) {
+  .sidebar {
+    display: none;
+  }
+}

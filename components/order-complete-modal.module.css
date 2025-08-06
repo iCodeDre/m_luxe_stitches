@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+.orderCompletePage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  font-size: clamp(11px, 1vw + 6px, 16px);
+
+  & > div {
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 3em;
+    padding: 2em;
+    height: fit-content;
+    width: 685px;
+  }
+  & button {
+    color: #fff;
+    border: none;
+    background: #7005dc;
+    padding: 0.5em 1em;
+  }
+
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+
+  & h1 {
+    color: #51133d;
+    font-size: 1.3em;
+  }
+
+  & a {
+    color: #7005dc;
+  }
+
+  & p {
+    font-size: 0.95em;
+    text-align: justify;
+    line-height: 1.4em;
+  }
+
+  & span {
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3em;
+    width: 100%;
+
+    & > b {
+      font-family: "Italianno", cursive;
+      font-size: 1.5em;
+      background: linear-gradient(90deg, #7005dc, #eb07a2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #7005dc;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .orderCompletePage {
+    & > div {
+      width: 90%;
+    }
+  }
+}

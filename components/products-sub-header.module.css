@@ -1,0 +1,72 @@
+.productsSubHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  & div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    & p:first-child {
+      color: rgb(45, 45, 45);
+      font-weight: 700;
+    }
+    & p:last-child {
+      color: rgb(45, 45, 45);
+      font-size: 0.9rem;
+    }
+  }
+
+  & .profileSearcIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 18%;
+  }
+
+  & div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  & select {
+    color: rgb(45, 45, 45);
+    font-family: "Poppins", sans-serif;
+    padding: 0.5rem 0.6rem;
+    border-color: rgb(216, 216, 216);
+
+    &:focus {
+      outline: none;
+      border: 2px solid #eb07a2;
+      box-shadow: 0 0 5px #eb07a2;
+      background-color: #f0f8ff;
+    }
+  }
+
+  & .formContainer {
+    position: absolute;
+    right: 16%;
+  }
+}
+
+@media (max-width: 650px) {
+  .productsSubHeader {
+    & div:first-child {
+      display: none;
+    }
+
+    & .profileSearcIcon {
+      position: unset;
+    }
+  }
+  .forOrderHeader {
+    & div:first-child {
+      display: flex;
+    }
+  }
+}

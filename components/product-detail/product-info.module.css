@@ -1,0 +1,43 @@
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(13px, 1vw + 8px, 16px);
+  gap: 1.5em;
+  margin-top: 3em;
+
+  & .productDescription {
+    color: rgb(52, 52, 52);
+    line-height: 1.4em;
+    text-align: justify;
+    width: 50%;
+    white-space: pre-wrap;
+  }
+
+  & .reviewSection {
+    display: flex;
+    gap: 3em;
+  }
+
+  & .reviews {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 767px) {
+  .productInfo {
+    & .productDescription {
+      width: 70%;
+    }
+
+    & .reviewSection {
+      flex-direction: column;
+    }
+
+    & .reviews {
+      width: 100%;
+    }
+  }
+}

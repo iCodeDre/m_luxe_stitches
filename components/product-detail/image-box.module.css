@@ -1,0 +1,129 @@
+.imageBox {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+
+  & .imageThumbnailContainer {
+    display: flex;
+    flex-direction: column;
+    width: 22.2%;
+    gap: 1rem;
+
+    & div {
+      box-sizing: border-box;
+      cursor: pointer;
+      position: relative;
+      aspect-ratio: 1;
+      height: 21.5%;
+      width: 100%;
+    }
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & .bigImageContainer {
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 16/21;
+    width: 75%;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    & .nextIcon,
+    .previousIcon {
+      display: none;
+      align-self: center;
+      background: #fff;
+      border-radius: 30px;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      z-index: 1;
+    }
+
+    & .nextIcon {
+      right: 5%;
+    }
+    & .previousIcon {
+      left: 5%;
+    }
+  }
+}
+
+.active {
+  border: 3px solid #eb07a2;
+  border-radius: 3px;
+}
+
+.activeImage {
+  opacity: 0.6;
+}
+
+@media (max-width: 767px) {
+  .imageBox {
+    width: 100%;
+    & .imageThumbnailContainer {
+      max-width: unset;
+      width: 25%;
+
+      & div {
+        height: 30%;
+      }
+    }
+
+    & .bigImageContainer {
+      max-width: unset;
+      aspect-ratio: 16/17;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .imageBox {
+    flex-direction: column-reverse;
+
+    & .imageThumbnailContainer {
+      flex-direction: row;
+      margin: auto;
+      width: 50%;
+
+      align-items: center;
+      justify-content: center;
+      & div {
+        box-shadow: 0 8px 7px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        border: 3px solid #fff;
+
+        width: 35%;
+      }
+    }
+
+    & .bigImageContainer {
+      display: flex;
+      overflow: hidden;
+      border-radius: 5px;
+      width: 100%;
+
+      & .nextIcon,
+      .previousIcon {
+        display: block;
+      }
+    }
+  }
+  .active {
+    border: 3px solid #eb07a2 !important;
+  }
+
+  .activeImage {
+    opacity: 0.5;
+  }
+}

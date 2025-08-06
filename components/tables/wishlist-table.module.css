@@ -1,0 +1,62 @@
+.myWishlist {
+  border: 1px solid rgb(216, 216, 216);
+  border-collapse: collapse;
+  width: unset;
+
+  & th:first-child {
+    text-align: center;
+  }
+
+  & th,
+  td {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    border-collapse: collapse;
+  }
+
+  & th {
+    text-align: left;
+    height: 50px;
+  }
+
+  & td {
+    height: 110px;
+
+    & a {
+      display: flex;
+       aspect-ratio: 9/10;
+      align-items: center;
+      width: 80px;
+    }
+  }
+
+  & h1 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  & .tableImageContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 1rem;
+  }
+}
+.deleteIconContainer {
+  border: none;
+  background: transparent;
+  position: relative;
+  width: 30px;
+  height: 20px;
+
+  & > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .myWishlist {
+    display: none;
+  }
+}

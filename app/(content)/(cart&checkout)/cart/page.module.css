@@ -1,0 +1,29 @@
+.cartSection {
+  width: 100%;
+
+  & .cartContentsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1190px;
+  }
+}
+
+@media (max-width: 1225px) {
+  .cartSection {
+    & .cartContentsContainer {
+      gap: 2rem;
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 1025px) {
+  .cartSection {
+    width: 95%;
+    margin: auto;
+    & .cartContentsContainer {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

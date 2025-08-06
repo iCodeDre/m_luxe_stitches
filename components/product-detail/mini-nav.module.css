@@ -1,0 +1,17 @@
+.miniNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    gap: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8em;
+    align-items: center;
+  }
+
+  & img {
+    width: 1.5em;
+  }
+}

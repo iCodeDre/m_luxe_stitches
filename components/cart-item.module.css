@@ -1,0 +1,91 @@
+.cartItem {
+  border-bottom: 1px solid rgb(216, 216, 216);
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  position: relative;
+
+  & h2 {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  & .deleteIconContainer {
+    border: none;
+    background: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    right: 4%;
+
+    & > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & .cartItemImage {
+    aspect-ratio: 9/10;
+   width: clamp(70px, 8vw + 8px, 80px);
+  }
+
+  & .cartItemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  & .priceSection {
+    display: flex;
+    align-items: center;
+
+    & p:first-child {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    & p:last-child {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .cartItem {
+    & .priceSection {
+      & p:last-child {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .cartItem {
+    & h2 {
+      font-size: 0.8rem;
+    }
+    & .truncate {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 135px;
+    }
+
+    & .deleteIconContainer {
+      width: 18px;
+      height: 18px;
+      top: 11%;
+    }
+  }
+}
+
+@media (max-width: 377px) {
+  .cartItem {
+    & .truncate {
+      max-width: 110px;
+    }
+  }
+}

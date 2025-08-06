@@ -1,0 +1,64 @@
+.searchItemListContainer {
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-height: 300px;
+  width: 100%;
+
+  & li {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    padding: 0.5rem;
+  }
+
+  & a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .price {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+  }
+
+  & header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & h1 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    & span {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    & img {
+      object-fit: cover;
+    }
+  }
+}
+
+.scrollBar {
+  overflow-y: scroll;
+}
+
+@media (max-width: 499px) {
+  .searchItemListContainer {
+    & a {
+      & > .price {
+        font-size: 0.8rem;
+      }
+    }
+    & header {
+      & h1 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
