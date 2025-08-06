@@ -25,6 +25,11 @@
     gap: 1.5rem;
   }
 
+  & .heading {
+    color: #7005dc;
+    align-self: center;
+  }
+
   & input[id="cat-add-new"] + label {
     color: #eb07a2;
     border: 1px solid #eb07a2;
@@ -237,10 +242,8 @@
       height: 60px;
     }
 
-      & button {
-  
-    width: 100%;
-  
-  }
+    & button {
+      width: 100%;
+    }
   }
 }
