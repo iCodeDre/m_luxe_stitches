@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@lucia-auth/adapter-postgresql": "^3.1.2",
-    "@lucia-auth/oauth": "^3.5.3",
     "@neondatabase/serverless": "^0.9.5",
     "@react-hookz/web": "^25.1.1",
     "arctic": "^3.7.0",
