@@ -85,6 +85,7 @@
       font-size: 0.8rem;
       text-align: justify;
       line-height: 1.3rem;
+      white-space: pre-wrap;
     }
 
     & button {
