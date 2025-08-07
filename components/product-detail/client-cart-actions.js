@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
+
 import { useState, useContext, use } from "react";
-import { motion } from "motion/react";
+
 import { CartContext } from "@/store/cart-context";
 
 import QuantityButtons from "@/components/UI/quantity-buttons";
@@ -65,6 +65,7 @@ function ClientCartActions({ label, productId, quantity }) {
         wishlistItems,
         wishlistCount,
       });
+      toast.success("Added to your wishlist successfully.");
     } catch (error) {
       if (error.message === "Product does not exist!") {
         toast.error(`${error.message}`);
@@ -97,6 +98,7 @@ function ClientCartActions({ label, productId, quantity }) {
         wishlistItems,
         wishlistCount,
       });
+      toast.success("Added to your cart successfully.");
     } catch (error) {
       if (error.message === "Product does not exist!") {
         toast.error(`${error.message}`);
