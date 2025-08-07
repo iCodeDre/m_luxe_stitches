@@ -14,7 +14,7 @@ function QuantityButtons({
   onIncreaseClick,
   onDecreaseClick,
   productId,
-  updateQuantityAction,
+  updateQuantityAction
 }) {
   if (productId) {
     return (

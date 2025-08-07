@@ -1,7 +1,7 @@
 .quanityButtonsContainer {
   display: flex;
-  height: 35px;
-  width: 100px;
+  height: 45px;
+  width: 120px;
   & p {
     display: flex;
     justify-content: center;
@@ -17,14 +17,11 @@
     flex: 1;
     width: 35px;
     height: 100%;
+
   }
 }
 
-@media (max-width: 768px) {
-  .quanityButtonsContainer {
-    width: 85px;
-  }
-}
+
 @media (max-width: 499px) {
   .quanityButtonsContainer {
   

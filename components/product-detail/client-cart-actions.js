@@ -26,6 +26,8 @@ function ClientCartActions({ label, productId, quantity }) {
   const { cartItems } = cart;
   const { wishlistItems } = wishlist;
 
+  const [isLoading, setIsloading] = useState(false);
+
   let isCarted = cartItems.some((item) => item.product_id === productId);
   let isWishlisted = wishlistItems.some(
     (item) => item.product_id === productId
@@ -47,6 +49,9 @@ function ClientCartActions({ label, productId, quantity }) {
       NProgress.start();
       return redirect("/auth");
     }
+
+    NProgress.start();
+
     try {
       const { cartItems, cartCount, wishlistItems, wishlistCount } =
         await wishlistHandler(userId, productId);
@@ -66,6 +71,8 @@ function ClientCartActions({ label, productId, quantity }) {
         return;
       }
       toast.error("Failed to update to wishlist, please try again");
+    } finally {
+      NProgress.done();
     }
   }
 
@@ -74,6 +81,8 @@ function ClientCartActions({ label, productId, quantity }) {
       NProgress.start();
       return redirect("/auth");
     }
+
+    setIsloading(true);
 
     try {
       const { cartItems, cartCount, wishlistItems, wishlistCount } =
@@ -94,6 +103,8 @@ function ClientCartActions({ label, productId, quantity }) {
         return;
       }
       toast.error("Failed to add item to cart, please try again");
+    } finally {
+      setIsloading(false);
     }
   }
 
@@ -128,8 +139,13 @@ function ClientCartActions({ label, productId, quantity }) {
           {!isWishlisted ? <p>Add to wishlist</p> : <p>Remove from wishlist</p>}
         </Button>
         {!isCarted ? (
-          <Button className="long-button" onClick={handleAddToCartClick}>
-            Add to cart
+          <Button
+            className="long-button"
+            onClick={handleAddToCartClick}
+            disabled={isLoading}
+            style={isLoading ? { background: "#eb07a2" } : undefined}
+          >
+            {isLoading ? "adding..." : "Add to cart"}
           </Button>
         ) : (
           <Button className="long-button" onClick={handleGoToCartClick}>
