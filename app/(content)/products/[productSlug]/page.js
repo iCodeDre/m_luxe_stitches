@@ -19,7 +19,27 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${productMetadata.title} by M.luxe`,
-    description: `${productMetadata.description}`,
+    description: productMetadata.description,
+    openGraph: {
+      title: `${productMetadata.title} | M.luxe Stitches`,
+      description: productMetadata.title,
+      url: `https://m-luxe-stitches.vercel.app/products/${slug}`,
+      siteName: "M.luxe Stitches",
+      images: productMetadata.image_url.filter(Boolean).map((url) => ({
+        url,
+        width: 1200,
+        height: 630,
+        alt: `Product preview image`,
+      })),
+      locale: "en_US",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: productMetadata.title,
+      description: productMetadata.description,
+      images: [productMetadata.image_url[0]],
+    },
   };
 }
 

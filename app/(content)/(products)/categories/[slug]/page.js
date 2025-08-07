@@ -13,6 +13,26 @@ export async function generateMetadata({ params }) {
   return {
     title: `${categoryMetadata.name} category`,
     description: `Browse through our ${categoryMetadata.number_of_products} luxurious wears in our ${categoryMetadata.name} category.`,
+    openGraph: {
+      title: `${productMetadata.title} | M.luxe Stitches`,
+      description: productMetadata.title,
+      url: `https://m-luxe-stitches.vercel.app/categories/${catSlug}`,
+      siteName: "M.luxe Stitches",
+      images: {
+        url: categoryMetadata.image_url,
+        width: 1200,
+        height: 630,
+        alt: `category preview image`,
+      },
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: productMetadata.title,
+      description: productMetadata.description,
+      images: [productMetadata.image_url[0]],
+    },
   };
 }
 
