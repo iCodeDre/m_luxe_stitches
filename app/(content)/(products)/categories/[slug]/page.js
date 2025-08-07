@@ -11,11 +11,11 @@ export async function generateMetadata({ params }) {
   const categoryMetadata = await getCategoryMetadata(catSlug);
 
   return {
-    title: `${categoryMetadata.name} category`,
+    title: `${categoryMetadata.name} |  M.luxe Stitches category`,
     description: `Browse through our ${categoryMetadata.number_of_products} luxurious wears in our ${categoryMetadata.name} category.`,
     openGraph: {
-      title: `${productMetadata.title} | M.luxe Stitches`,
-      description: productMetadata.title,
+      title: `${categoryMetadata.name} | M.luxe Stitches category`,
+      description: `Browse through our ${categoryMetadata.number_of_products} luxurious wears in our ${categoryMetadata.name} category.`,
       url: `https://m-luxe-stitches.vercel.app/categories/${catSlug}`,
       siteName: "M.luxe Stitches",
       images: {
@@ -29,9 +29,9 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: productMetadata.title,
-      description: productMetadata.description,
-      images: [productMetadata.image_url[0]],
+      title: `${categoryMetadata.name} | M.luxe Stitches category`,
+      description: `Browse through our ${categoryMetadata.number_of_products} luxurious wears in our ${categoryMetadata.name} category.`,
+      images: [categoryMetadata.image_url],
     },
   };
 }
