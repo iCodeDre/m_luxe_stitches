@@ -29,7 +29,7 @@ function HeroTitle() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          M.Luxe Stitchies
+          M.Luxe Stitches
         </motion.h1>
 
         <motion.div
