@@ -2,7 +2,24 @@
 A modern e-commerce web app for browsing, ordering, and managing clothing samples specifically built for online tailors. Built with Next.js, PostgreSQL, featuring a clean UI, responsive design, secure checkout, account management and admin operations.
 
 # Core Principle
-This project was built for a friend's brand(M.luxe Stitches) whom is a tailor and has built her business online, specifically on whatsapp. This project solves the issue of unlimited posting of her design samples on her whatsapp status which results in endless status which limits the number of patient viewers(it is not everyone that will be patient enough to sit through endless photos on your whatsapp status). This issue resulted in fewer views on her design samples. This project is a fullstack E-commerce store, where she can upload all her catalogues with estimated prices all in one place. Users can easily access this web app, browse through her catalogues and place an order. The order flow was built with no payment systems; when a user places an order, the admin will recieve this order which comes with the users details like email and whatsapp phone number. The admin can then confrim this order by approving or denying the order items, and then easily contact the user through their provided whatsapp phone number or email for further discussions like the clothing fabric, her measurements etc. 
+This project was developed for M.Luxe Stitches, a tailoring brand that primarily operates through WhatsApp.
+
+Previously, the brand showcased design samples by posting numerous images on WhatsApp status. However, this approach often resulted in excessively long status updates, causing viewer fatigue and ultimately reducing engagement. 
+ 
+To address this, the project delivers a full-stack e-commerce platform where the admin can upload the complete catalogue with estimated prices in one centralized location.
+Customers can easily browse the catalogue, select designs, and place orders directly through the site.
+
+The ordering process is intentionally built without integrated online payments. Instead:
+When an order is placed, the admin receives the order details, including the customer’s email and WhatsApp phone number.
+
+The admin can approve or decline items in the order.
+
+Once approved, the admin can quickly contact the customer via WhatsApp or email to finalize details such as fabric selection, measurements, and other custom requirements.
+
+This streamlined approach enhances the brand’s online presence, improves accessibility for customers, and creates a smoother, more efficient ordering experience.
+
+## 🚀 Demo
+**Live Site:** https://m-luxe-stitches.vercel.app/
 
 ## Features
 - 🔑 Basic auth
@@ -29,6 +46,26 @@ This project was built for a friend's brand(M.luxe Stitches) whom is a tailor an
 
 ## Run Development Server
 npm run dev
+
+## What I Learned
+Working on this project was a defining moment in my web development journey. It was my first real-world capstone project, started immediately after completing my Next.js course on Udemy, and it pushed me far beyond simply following tutorials.
+
+I applied everything I had learned up to that point - HTML, CSS, JavaScript, React, Next.js, PostgreSQL - and quickly realized that building a complete application involves more than just writing code. It’s about integrating multiple technologies and ensuring they work seamlessly together to deliver a smooth experience for the end user.
+
+This project was also my first time:
+
+- Designing a web app with the client’s experience as the core priority.
+
+- Integrating Lucia Auth for authentication and truly understanding how cookies work differently between localhost and secure HTTPS environments.
+
+- Hosting an app of any sort by hosting this Next.js app on Vercel and managing a PostgreSQL database hosted on Neon.
+
+- Deploying a fully functional app for real-world use, which taught me the importance of environment variables, deployment pipelines, and security best practices.
+
+One of my biggest takeaways is that web development is not just about knowing how to code - it’s about solving real problems by combining tools, frameworks, and services in creative ways. Hosting and deployment, in particular, showed me that the ability to connect the dots between technologies is what turns an idea into something people can actually use.
+
+Above all, this project gave me the confidence that I can take an idea from concept to a live, working product - and that’s an empowering feeling I’ll carry into every project I build from here on. I cannotn wait to turn my next idea into reality. ILoveCoding💕
+
 
 ## Future Improvements
 - Integrate email confirmation or google OAuth
