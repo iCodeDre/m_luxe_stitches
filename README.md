@@ -64,7 +64,7 @@ This project was also my first time:
 
 One of my biggest takeaways is that web development is not just about knowing how to code - it’s about solving real problems by combining tools, frameworks, and services in creative ways. Hosting and deployment, in particular, showed me that the ability to connect the dots between technologies is what turns an idea into something people can actually use.
 
-Above all, this project gave me the confidence that I can take an idea from concept to a live, working product - and that’s an empowering feeling I’ll carry into every project I build from here on. I cannotn wait to turn my next idea into reality. ILoveCoding💕
+Above all, this project gave me the confidence that I can take an idea from concept to a live, working product - and that’s an empowering feeling I’ll carry into every project I build from here on. I cannot wait to turn my next idea into reality. ILoveCoding💕
 
 
 ## Future Improvements
