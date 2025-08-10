@@ -21,11 +21,11 @@ This project was built for a friend's brand(M.luxe Stitches) whom is a tailor an
 
 ## Installation
 1. Clone the repo
-2: Install dependencies 'npm install'
-3: Create a .env.local file
-     DATABASE_URL=your_database_url
-     NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=...
-     NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=...
+2. Install dependencies 'npm install'
+3. Create a .env.local file
+     - DATABASE_URL=your_database_url
+     - NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=...
+     - NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=...
 
 ## Run Development Server
 npm run dev
