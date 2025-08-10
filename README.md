@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# M.luxe Stitches – Fullstack E-commerce Store
+A modern e-commerce web app for browsing, ordering, and managing clothing samples specifically built for online tailors. Built with Next.js, PostgreSQL, featuring a clean UI, responsive design, secure checkout, account management and admin operations.
 
-## Getting Started
+# Core Principle
+This project was built for a friend's brand(M.luxe Stitches) whom is a tailor and has built her business online, specifically on whatsapp. This project solves the issue of unlimited posting of her design samples on her whatsapp status which results in endless status which limits the number of patient viewers(it is not everyone that will be patient enough to sit through endless photos on your whatsapp status). This issue resulted in fewer views on her design samples. This project is a fullstack E-commerce store, where she can upload all her catalogues with estimated prices all in one place. Users can easily access this web app, browse through her catalogues and place an order. The order flow was built with no payment systems; when a user places an order, the admin will recieve this order which comes with the users details like email and whatsapp phone number. The admin can then confrim this order by approving or denying the order items, and then easily contact the user through their provided whatsapp phone number or email for further discussions like the clothing fabric, her measurements etc. 
 
-First, run the development server:
+## Features
+- 🔑 Basic auth
+- 🛍️ Browse products by category
+- 🔍 Search and filter items
+- 🛒 Shopping cart with quantity updates
+- 💳 Checkout flow with order confirmation
+- 🖼️ Image upload via Cloudinary
+- 🔑 Admin dashboard for adding/editing products
+- 📱 Fully responsive design
 
-```bash
+## Tech Stack
+**Frontend:** Next.js, React, CSS Modules, Motion  
+**Backend:** Next.js, PostgreSQL 
+**Other:** Cloudinary, Lucia Auth, Vercel Deployment
+
+## Installation
+1. Clone the repo
+2: Install dependencies 'npm install'
+3: Create a .env.local file
+     DATABASE_URL=your_database_url
+     NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=...
+     NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=...
+
+## Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Future Improvements
+- Integrate email confirmation or google OAuth
+- Improve SEO and page speed
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
